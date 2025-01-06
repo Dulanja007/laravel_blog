@@ -25,7 +25,7 @@ Route::group(['middleware' => 'auth'], function() {
 });
 
 //Admin routes
-Route::group(['middleware' => [ 'admin','auth'],'prefix'=>'admin', 'as' => 'admin.'], function() {
-    Route::get('/dashboard',[DashboardController::class,'index'])->middleware('admin')->name('dashboard');
+Route::group(['middleware' => [ 'admin','auth']], function() {
+    Route::get('/admin/dashboard',[DashboardController::class,'index'])->middleware('admin')->name('admin.dashboard');
 });
 //Route::get('/admin/dashboard',[DashboardController::class,'index'])->middleware('admin')->name('admin.dashboard');
