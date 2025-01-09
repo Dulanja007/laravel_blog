@@ -4,10 +4,8 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        
         "dev:bootstrap": "vite --config themes\bootstrap/vite.config.js",
         "build:bootstrap": "vite build --config themes\bootstrap/vite.config.js"
-        
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
